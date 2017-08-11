@@ -1,9 +1,5 @@
 <?php
 
-// den con khi cung biet dung git.
-// den con khi cung biet dung git.
-// den con khi cung biet dung git.
-
 namespace app\controllers;
 
 use Yii;
@@ -255,27 +251,16 @@ class AmicaFrController extends Controller {
         return parent::beforeAction($action);
     }
 
-	public function actionDevelop(){
-		
-		// Branch Develop
-		
-
-	}
-
     public function actionLogin(){
 
-       // dung co dua may cau
-	   // dung co dua may cau
-	   // dung co dua may cau
-	   // dung co dua may cau
-	   // dung co dua may cau
-	   // dung co dua may cau
-	   // dung co dua may cau
-	   // dung co dua may cau
-	   // dung co dua may cau
-	   // dung co dua may cau
-	   // dung co dua may cau
-	   
+        if(Yii::$app->request->post()){
+            if(Yii::$app->request->post('password')  == 'Amica27ntT'){
+                Yii::$app->session->set('login', true);
+                $url = isset(Yii::$app->request->getQueryParams()['url']) ? Yii::$app->request->getQueryParams()['url'] : '/';
+                return $this->redirect($url);
+            }
+        }
+        return $this->renderPartial('//page2016/login');
     }
     // TODO page cache
 
