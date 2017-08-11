@@ -252,6 +252,12 @@ class AmicaFrController extends Controller {
           Yii::$app->session->set('projet',$projet);
         return parent::beforeAction($action);
     }
+	
+	public function actionDevelop(){
+		
+		// Branch Develop
+		
+	}
 
     public function actionLogin(){
 
