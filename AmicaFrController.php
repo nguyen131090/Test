@@ -1,6 +1,8 @@
 <?php
 
-
+// den con khi cung biet dung git.
+// den con khi cung biet dung git.
+// den con khi cung biet dung git.
 
 namespace app\controllers;
 
@@ -252,6 +254,12 @@ class AmicaFrController extends Controller {
           Yii::$app->session->set('projet',$projet);
         return parent::beforeAction($action);
     }
+	public function actionTest(){
+		// Test merge Conflic
+		// Test merge Conflic
+		// Test merge Conflic
+		// Test merge Conflic
+	}
 
     public function actionLogin(){
 
