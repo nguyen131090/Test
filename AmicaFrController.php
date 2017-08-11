@@ -1,6 +1,6 @@
 <?php
 
-// dung dua may cau
+
 
 namespace app\controllers;
 
@@ -255,14 +255,18 @@ class AmicaFrController extends Controller {
 
     public function actionLogin(){
 
-        if(Yii::$app->request->post()){
-            if(Yii::$app->request->post('password')  == 'Amica27ntT'){
-                Yii::$app->session->set('login', true);
-                $url = isset(Yii::$app->request->getQueryParams()['url']) ? Yii::$app->request->getQueryParams()['url'] : '/';
-                return $this->redirect($url);
-            }
-        }
-        return $this->renderPartial('//page2016/login');
+       // dung co dua may cau
+	   // dung co dua may cau
+	   // dung co dua may cau
+	   // dung co dua may cau
+	   // dung co dua may cau
+	   // dung co dua may cau
+	   // dung co dua may cau
+	   // dung co dua may cau
+	   // dung co dua may cau
+	   // dung co dua may cau
+	   // dung co dua may cau
+	   
     }
     // TODO page cache
 
